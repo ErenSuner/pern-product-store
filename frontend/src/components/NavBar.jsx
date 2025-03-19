@@ -3,7 +3,7 @@ import { ShoppingBagIcon, ShoppingCartIcon } from "lucide-react";
 import ThemeSelector from "./ThemeSelector";
 import { useProductStore } from "../store/useProductStore";
 
-function Navbar() {
+function NavBar() {
   const { pathname } = useResolvedPath();
   const isHomePage = pathname === "/";
 
@@ -48,4 +48,4 @@ function Navbar() {
     </div>
   );
 }
-export default Navbar;
+export default NavBar;
