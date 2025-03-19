@@ -1,0 +1,33 @@
+# For testing the API install the REST Client extension in Visual Studio Code
+
+### GET
+GET http://localhost:3000
+
+### GET ALL PRODUCTS
+GET http://localhost:3000/api/products
+
+### GET PRODUCT BY ID
+GET http://localhost:3000/api/products/1
+
+### CREATE PRODUCT
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+    "name": "Desk",
+    "image": "image1.jpg",
+    "price": 100
+}
+
+### UPDATE PRODUCT
+PUT http://localhost:3000/api/products/3
+Content-Type: application/json
+
+{
+    "name": "Headphones",
+    "price": 150,
+    "image": "https://www.energysistem.com/cdnassets/products/45303/principal_2000.jpg"
+}
+
+### DELETE PRODUCT
+DELETE http://localhost:3000/api/products/1
